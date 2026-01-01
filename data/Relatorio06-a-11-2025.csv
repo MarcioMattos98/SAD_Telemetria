@@ -1,10 +1,19 @@
 Ativo Nome da garagem;;;Descrição do ativo;;;;distância (km);Duração de condução (hh:mm:ss);Pontuação avançada;(Tr) Aceleração Brusca;(Tr) Curva Brusca;(Tr) Excesso de Marcha Lenta;(Tr) Excesso de Rotação;;(Tr) Excesso de Velocidade 85 Km;;(Tr) Excesso de Velocidade 90 Km;(Tr) Fora da Faixa Verde;(Tr) Freada Brusca
 ;;;Pontos adicionados/removidos por ocorrência:;;;;;;;{+1};{+1};{+1};{+1};;{+1};;{+1};{+1};{+1}
 Bureal Veritas - Junho 2025;6400 - M.B. - OF 1722 (C);1580,3;6400 - M.B. - OF 1722 ( C );;;;1.580,30;66:12:40;98;21;24;15;2;;1;;0;7;28
-Bureal Veritas - Julho 2025;;;6401 - M.B. - OF 1722 ( C );;;;1.625,80;67:35:12;89;20;22;14;2;;0;;0;6;25
-Bureau Veritas - Agosto 2025;;;6402 - M.B. - OF 1722 ( C );;;;1.650,45;68:18:55;81;19;21;13;1;;1;;0;6;20
-Bureau Veritas - Setembro 2025;;;6403 - M.B. - OF 1722 ( C );;;;1.590,45;62:42:17;85;17;19;22;1;;0;;0;5;21
-Bureau Veritas - Outubro 2025;;;6404 - M.B. - OF 1722 ( C );;;;1.695,90;70:28:40;84;16;18;11;1;;0;;0;5;33
-Bureal Veritas - Novembro 2025;;;6405 - M.B. - OF 1722 ( C );;;;1.671,45;69:42:17;82;17;19;12;1;;0;;0;5;28
+Bureal Veritas - Julho 2025;;;6400 - M.B. - OF 1722 ( C );;;;1.625,80;67:35:12;89;20;22;14;2;;0;;0;6;25
+Bureau Veritas - Agosto 2025;;;6400 - M.B. - OF 1722 ( C );;;;1.650,45;68:18:55;81;19;21;13;1;;1;;0;6;20
+Bureau Veritas - Setembro 2025;;;6400 - M.B. - OF 1722 ( C );;;;1.590,45;62:42:17;85;17;19;22;1;;0;;0;5;21
+Bureau Veritas - Outubro 2025;;;6400 - M.B. - OF 1722 ( C );;;;1.695,90;70:28:40;84;16;18;11;1;;0;;0;5;33
+Bureal Veritas - Novembro 2025;;;6400 - M.B. - OF 1722 ( C );;;;1.671,45;69:42:17;82;17;19;12;1;;0;;0;5;28
 ;;;Total;;;;9.814,35;335:17:44;519;110;123;87;8;;2;;0;34;155
 ;;;Média;;;;1.638,13;67:35:12;85;18;20;14;1;;0;;0;6;27
+;;;;;;;;;;;;;;;;;;;
+Bureal Veritas - Junho 2025;6400 - M.B. - OF 1722 (C);1580,3;6300 - M.B. - OF 1722 ( C );;;;1.545,20;65:48:30;99;24;27;9;3;;1;;0;9;26
+Bureal Veritas - Julho 2025;6400 - M.B. - OF 1722 (C);1580,3;6300 - M.B. - OF 1722 ( C );;;;1.585,60;66:55:10;90;23;26;7;3;;0;;0;8;23
+Bureal Veritas - Agosto 2025;6400 - M.B. - OF 1722 (C);1580,3;6300 - M.B. - OF 1722 ( C );;;;1.610,80;67:42:25;100;22;27;11;2;;0;;0;8;30
+Bureal Veritas - Setembro 2025;6400 - M.B. - OF 1722 (C);1580,3;6300 - M.B. - OF 1722 ( C );;;;1.560,40;66:20:15;94;21;24;10;2;;1;;0;7;29
+Bureal Veritas - Outubro 2025;6400 - M.B. - OF 1722 (C);1580,3;6300 - M.B. - OF 1722 ( C );;;;1.630,90;66:23:29;78;20;22;6;2;;0;;0;7;21
+Bureal Veritas - Novembri 2025;6400 - M.B. - OF 1722 (C);1580,3;6300 - M.B. - OF 1722 ( C );;;;1.595,30;67:10:50;88;21;24;8;2;;0;;0;8;25
+;;;Total;;;;9.528,20;400:20:39;549;131;150;51;14;;2;;0;47;154
+;;;Média;;;;1.590,45;66:39:19;92;22;25;9;2;;0;;0;8;26
