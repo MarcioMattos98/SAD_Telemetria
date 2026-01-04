@@ -5,7 +5,7 @@ from dash import dcc, html
 class GraphFactory:
     @staticmethod
     def create_score_evolution(df):
-        # Gráfico de linha
+        # Grafico de linha
         fig = px.line(df, x='Mes', y='Score', markers=True, 
                       title='Evolução da Pontuação de Segurança',
                       color_discrete_sequence=['#2ecc71'])
@@ -14,7 +14,7 @@ class GraphFactory:
 
     @staticmethod
     def create_infractions_breakdown(df):
-        # Gráfico de barras
+        # Grafico de barras
         df_melted = df.melt(id_vars=['Mes'], 
                             value_vars=['Aceleracao_Brusca', 'Freada_Brusca', 'Curva_Brusca', 'Exc_Velocidade'],
                             var_name='Tipo_Infracao', value_name='Qtd')
@@ -26,7 +26,7 @@ class GraphFactory:
 
     @staticmethod
     def create_scatter_distance_score(df):
-        # Gráfico de dispersão
+        # Grafico de dispersao
         fig = px.scatter(df, x='Distancia', y='Score', 
                          size='Freada_Brusca', 
                          hover_data=['Mes'],
@@ -36,7 +36,7 @@ class GraphFactory:
 
     @staticmethod
     def create_gauge_current_month(df):
-        # Pega o último mês disponível deste veículo específico
+        # Pega o ultimo mes disponivel deste veiculo especifico
         if len(df) > 0:
             last_month_score = df.iloc[-1]['Score']
             mes_nome = df.iloc[-1]['Mes']
@@ -65,13 +65,12 @@ class DashboardLayout:
             html.H1("SAD - Sistema de Apoio à Decisão: Frota Romestur", 
                     style={'textAlign': 'center', 'fontFamily': 'Arial', 'color': '#333'}),
             
-            # --- ÁREA DE SELEÇÃO (INTERATIVIDADE) ---
             html.Div([
                 html.Label("Selecione o Veículo para Análise:", style={'fontWeight': 'bold', 'fontSize': '18px'}),
                 dcc.Dropdown(
                     id='vehicle-selector',
-                    options=vehicle_options, # Lista de veiculos que vem do banco de dados
-                    value=vehicle_options[0]['value'] if vehicle_options else None, # Seleciona o primeiro por padrão
+                    options=vehicle_options, 
+                    value=vehicle_options[0]['value'] if vehicle_options else None, 
                     clearable=False,
                     style={'width': '50%', 'margin': 'auto'}
                 ),
@@ -79,7 +78,6 @@ class DashboardLayout:
 
             html.Hr(),
 
-            # --- ÁREA DOS GRÁFICOS (Ids necessários para o Callback) ---
             html.Div([
                 html.Div([dcc.Graph(id='graph-evolution')], style={'width': '48%', 'display': 'inline-block'}),
                 html.Div([dcc.Graph(id='graph-infractions')], style={'width': '48%', 'display': 'inline-block'}),

@@ -1,7 +1,6 @@
 import os
 import sys
 
-# Tenta importar o controller
 try:
     from src.controller import AppController
 except ImportError as e:
@@ -11,14 +10,13 @@ except ImportError as e:
 if __name__ == "__main__":
     print("--- Passo 1: Iniciando sistema ---")
     
-    # 1. DEFINIÇÃO DO CAMINHO DO ARQUIVO (Esta linha estava faltando ou com erro)
-    # Certifique-se que o nome do arquivo aqui é IGUAL ao que está na pasta data
+    # 1. Definição do caminho do arquivo CSV
     nome_arquivo = 'Relatorio06-a-11-2025.csv'
     csv_path = os.path.join('data', nome_arquivo)
     
     print(f"--- Passo 2: Buscando arquivo em: {csv_path} ---")
     
-    # 2. VERIFICAÇÃO DE EXISTÊNCIA
+    # Verifica se o arquivo existe
     if not os.path.exists(csv_path):
         print(f"ERRO CRÍTICO: O arquivo '{nome_arquivo}' não foi encontrado na pasta 'data'.")
         print("Verifique se o nome está correto e se a extensão é .csv mesmo.")
@@ -26,7 +24,7 @@ if __name__ == "__main__":
         print("--- Passo 3: Arquivo encontrado. Iniciando processamento... ---")
         
         try:
-            # 3. EXECUÇÃO DO SISTEMA
+            # 3. Execução do Controller
             controller = AppController(csv_path)
             print("--- Passo 4: Servidor Dash rodando! Acesse o link abaixo ---")
             controller.run()
